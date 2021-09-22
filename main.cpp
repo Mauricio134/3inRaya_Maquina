@@ -19,6 +19,7 @@ DSc. Manuel Eduardo Loayza Fernandez
                        Semestre 2021 - II
                          Arequipa - Perú
 */
+#include <cstdlib>
 #include <iostream>
 using namespace std;
 
@@ -49,8 +50,8 @@ int main() {
 	cout << "==========" << "Tres en Raya" << "==========" << endl;
 	cout << "Ingresar Simbolo del jugador: ";
 	cin >> x;
-	cout << "Elegir, Quien Jugara Primero? (Jugador = 1, Maquina = 2): ";
-	cin >> jugador;
+	
+	jugador =1+ rand() %3;
 	
     /*Selección de Inicio de Partida*/
 	if (jugador == 1){
