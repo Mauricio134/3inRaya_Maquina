@@ -105,7 +105,7 @@ int main() {
 					cancel = 1;
 				}
 				else{
-					cout << "Ese Posicion ya esta utilizada" << endl;
+					cout << "Esa Posicion ya esta utilizada" << endl;
 					i--;
 					cancel = 0;
 				}
