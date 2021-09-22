@@ -1,4 +1,24 @@
-/*  */
+/*
+======== Curso de Ciencia de la Computación I - CCOMP2 - 1 ==========
+Integrantes:
+------------
+1) Mauricio David Apaza Iruri
+2) William Alexis Barrios Concha
+3) Oscar Mauricio Quispe Mallma
+
+Título:
+-------
+Creación de un Tik Tak Toe en base a lenguaje C++ (Persona v.s. Máquina)
+
+Profesor:
+--------- 
+DSc. Manuel Eduardo Loayza Fernandez
+
+            Departamento de Ciencia de la Computación
+                 Universidad Católica San Pablo
+                       Semestre 2021 - II
+                         Arequipa - Perú
+*/
 #include <iostream>
 using namespace std;
 
@@ -332,7 +352,7 @@ int main() {
 				
 				/*Caso No al centro*/
 				
-				if (e == x && c == 'O' && g == x){
+				if (e == x && c == 'O' && g == x && j == ' '){
 					j = 'O';
 				}
 				
