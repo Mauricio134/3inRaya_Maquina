@@ -51,17 +51,8 @@ int main() {
 	cout << "==========" << "Tres en Raya" << "==========" << endl;
 	cout << "Ingresar Simbolo del jugador: ";
 	cin >> x;
-	
-	numero = rand();
-	if (numero%2 == 0){
-		jugador = numero%2;
-	}
-	else if (numero%2 == 1){
-		jugador = numero%2;
-	}
-	else {
-		jugador = 0;
-	}
+	cout << "Elegir, Quien Jugara Primero? (Jugador = 1, Maquina = 2): ";
+	cin >> jugador;
 	
     /*Selección de Inicio de Partida*/
 	if (jugador == 1){
