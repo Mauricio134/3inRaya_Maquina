@@ -34,6 +34,7 @@ int main() {
 	int cancel;
 	int especial = 0;
 	int cerrar = 1;
+	int numero;
 	
 	/*Variables del Tablero*/
 	char a = ' ';
@@ -51,7 +52,16 @@ int main() {
 	cout << "Ingresar Simbolo del jugador: ";
 	cin >> x;
 	
-	jugador =1+ rand() %3;
+	numero = rand();
+	if (numero%2 == 0){
+		jugador = numero%2;
+	}
+	else if (numero%2 == 1){
+		jugador = numero%2;
+	}
+	else {
+		jugador = 0;
+	}
 	
     /*Selección de Inicio de Partida*/
 	if (jugador == 1){
@@ -105,7 +115,7 @@ int main() {
 					cancel = 1;
 				}
 				else{
-					cout << "Ese Posicion ya esta utilizada" << endl;
+					cout << "Esa Posicion ya esta utilizada" << endl;
 					i--;
 					cancel = 0;
 				}
@@ -500,7 +510,7 @@ int main() {
 					cancel = 1;
 				}
 				else{
-					cout << "Ese Posicion ya esta utilizada" << endl;
+					cout << "Esa Posicion ya esta utilizada" << endl;
 					i--;
 					cancel = 0;
 				}
